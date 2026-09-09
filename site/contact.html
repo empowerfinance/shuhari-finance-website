@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+  contact.html — Contact Us. Reinforces RBI disclosure #1 (corporate identity).
+  All facts pulled from config.js via data-cfg.
+  OUTSTANDING PLACEHOLDERS:
+    • Customer care phone/email (config.customerCare) .......... [24]
+      (see TODO.md §C — the policy's support desk belongs to the LSP, not SFPL)
+    • RBI CoR number (config.corNumber) ........................ [17]
+    • cta-contact.png added
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Shuhari Finance Pvt. Ltd.</title>
+  <meta name="description" content="Contact Shuhari Finance Pvt. Ltd. — registered office address, CIN, RBI CoR number and customer care contacts." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/tokens.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/index.html">Home</a></li><li>Contact</li></ol></nav>
+        <div class="page-hero__inner">
+          <span class="eyebrow">Contact Us</span>
+          <h1>Get in touch</h1>
+          <p class="lead">Reach our offices or customer care.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="gap:var(--space-7);align-items:start">
+
+          <!-- Offices + contacts -->
+          <div class="flow-lg">
+            <div class="contact-card">
+              <span class="contact-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <div>
+                <h3>Registered office</h3>
+                <address data-cfg="registeredOffice"></address>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+              <div>
+                <h3>Customer care</h3>
+                <address>
+                  Phone: <span class="placeholder" data-cfg="customerCare.phone">[TO BE UPDATED]</span><span class="placeholder-ref">24</span><br />
+                  Email: <span class="placeholder" data-cfg="customerCare.email">[TO BE UPDATED]</span><span class="placeholder-ref">24</span>
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporate identity + map -->
+          <div class="flow-lg">
+            <div class="card">
+              <h3>Corporate identity</h3>
+              <dl class="fact-grid" style="margin-top:var(--space-3)">
+                <div class="fact"><dt>Legal name</dt><dd data-cfg="legalName">Shuhari Finance Pvt. Ltd.</dd></div>
+                <div class="fact"><dt>CIN</dt><dd data-cfg="cin"></dd></div>
+                <div class="fact"><dt>RBI CoR No.</dt><dd><span class="placeholder" data-cfg="corNumber">[TO BE UPDATED]</span><span class="placeholder-ref">17</span></dd></div>
+                <div class="fact"><dt>Regulator</dt><dd>Reserve Bank of India</dd></div>
+              </dl>
+              <p class="text-muted" style="font-size:var(--fs-small);margin-top:var(--space-3)">
+                <span data-cfg="rbiStatement">Shuhari Finance Pvt. Ltd. is regulated by the Reserve Bank of India.</span>
+                Verify our registration on the
+                <a data-cfg-href="links.rbiNbfcList" href="https://nbfc.rbi.org.in" rel="noopener" target="_blank">RBI NBFC list</a>.
+              </p>
+            </div>
+
+            <img src="/assets/cta-contact.png"
+                 alt="A modern, welcoming corporate office reception"
+                 width="1536" height="1024"
+                 style="width:100%;height:auto;border-radius:var(--radius);display:block;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div id="site-footer"></div>
+  <script src="/scripts/config.js"></script>
+  <script src="/scripts/include.js"></script>
+</body>
+</html>

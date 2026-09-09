@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+  grievance-redressal.html — Grievance Redressal. Covers RBI disclosure #4.
+  Includes the mandatory ON-SITE complaint form (not just a link), 3-tier
+  escalation matrix, CMS + Sachet links, and the 30-day resolution timeline.
+  Escalation + officer details come from the Grievance Redressal Policy
+  (documents/grievance-redressal-policy.pdf, §12) via config.js.
+  OUTSTANDING PLACEHOLDERS:
+    • GRO phone — not stated in the policy (config) ............ [22]
+    • grievanceApiUrl is a placeholder endpoint (config.js) .... [42]
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grievance Redressal — Shuhari Finance Pvt. Ltd.</title>
+  <meta name="description" content="File a complaint with Shuhari Finance Pvt. Ltd. Nodal Grievance Redressal Officer details, online complaint form, 30-day resolution timeline, and escalation to the RBI Ombudsman (CMS) and Sachet portals." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/tokens.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/index.html">Home</a></li><li>Grievance Redressal</li></ol></nav>
+        <div class="page-hero__inner">
+          <span class="eyebrow">Customer First</span>
+          <h1>Grievance Redressal</h1>
+          <p class="lead">We take every complaint seriously and aim to resolve it within <span data-cfg="resolutionDays"></span> days. Here&rsquo;s
+            how to reach us and how to escalate if needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-tier escalation matrix -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Escalation matrix</span>
+          <h2>How to escalate your complaint</h2>
+          <p class="lead">If you are not satisfied with the response at any level, you may escalate to the
+            next.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num" aria-hidden="true"></div>
+            <div>
+              <div class="step__tag">Level 1 &middot; First contact</div>
+              <h3>NIRA Help &amp; Support</h3>
+              <p class="text-muted">For general queries and support, start here — or raise your complaint
+                using the form below.</p>
+              <p style="font-size:var(--fs-small)">
+                <a data-cfg-mailto="niraSupport.email" href="mailto:support@nirafinance.com"><span data-cfg="niraSupport.email"></span></a> &middot;
+                <span data-cfg="niraSupport.phone"></span>
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num" aria-hidden="true"></div>
+            <div>
+              <div class="step__tag">Level 2 &middot; Day-to-day grievances</div>
+              <h3>Nodal Grievance Redressal Officer</h3>
+              <p class="text-muted">The designated officer at our Lending Service Provider, NIRA, who
+                handles day-to-day grievances and complaints.</p>
+              <p style="font-size:var(--fs-small)">
+                <span data-cfg="lspNodalOfficer.name"></span> &middot;
+                <span data-cfg="lspNodalOfficer.designation"></span><br />
+                <a data-cfg-mailto="lspNodalOfficer.email" href="mailto:grievance@nirafinance.com"><span data-cfg="lspNodalOfficer.email"></span></a> &middot;
+                <span data-cfg="lspNodalOfficer.phone"></span>
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num" aria-hidden="true"></div>
+            <div>
+              <div class="step__tag">Level 3 &middot; If unresolved</div>
+              <h3>Grievance Redressal Officer, Shuhari Finance</h3>
+              <p class="text-muted">If your complaint is not resolved to your satisfaction at Level 2, you
+                may escalate to Shuhari Finance&rsquo;s own Grievance Redressal Officer, who is ultimately
+                responsible for grievance redressal.</p>
+              <p style="font-size:var(--fs-small)">
+                <span data-cfg="grievanceOfficer.name"></span> &middot;
+                <span data-cfg="grievanceOfficer.designation"></span><br />
+                <a data-cfg-mailto="grievanceOfficer.email" href="mailto:grievance@shuharifinance.com"><span data-cfg="grievanceOfficer.email"></span></a> &middot;
+                Phone: <span class="placeholder" data-cfg="grievanceOfficer.phone">[TO BE UPDATED]</span><span class="placeholder-ref">22</span><br />
+                <span data-cfg="grievanceOfficer.address"></span>
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num" aria-hidden="true"></div>
+            <div>
+              <div class="step__tag">Level 4 &middot; Reserve Bank of India</div>
+              <h3>RBI Ombudsman &amp; Sachet portal</h3>
+              <p class="text-muted">If your complaint is not resolved within <span data-cfg="resolutionDays"></span> days, or you are not
+                satisfied with the resolution, you may escalate to the Reserve Bank of India under the
+                Reserve Bank &ndash; Integrated Ombudsman Scheme (RB-IOS):</p>
+              <ul style="font-size:var(--fs-small)">
+                <li>RBI Integrated Ombudsman / Complaint Management System (CMS):
+                  <a data-cfg-href="links.rbiCms" href="https://cms.rbi.org.in" rel="noopener" target="_blank">cms.rbi.org.in</a>
+                  &middot; toll-free <span data-cfg="rbiOmbudsmanTollFree"></span></li>
+                <li>RBI Sachet portal (complaints against NBFCs):
+                  <a data-cfg-href="links.sachet" href="https://sachet.rbi.org.in" rel="noopener" target="_blank">sachet.rbi.org.in</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-muted" style="font-size:var(--fs-small);margin-top:var(--space-5)">
+          Our full grievance redressal process is set out in our
+          <a href="/documents/grievance-redressal-policy.pdf" target="_blank" rel="noopener">Grievance Redressal Policy (PDF)</a>.
+        </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Online complaint form (RBI requirement: form ON the site) -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="gap:var(--space-7);align-items:start">
+          <div>
+            <span class="eyebrow">Online complaint form</span>
+            <h2>File a complaint</h2>
+            <p class="text-muted">Submit your complaint here. Fields marked <span class="req" aria-hidden="true">*</span>
+              are required. We do not store your submission in your browser.</p>
+
+            <div class="callout" style="margin-top:var(--space-4)">
+              <p style="margin:0"><strong>Our commitment:</strong> we acknowledge your complaint and
+                respond within <strong><span data-cfg="resolutionDays"></span> days</strong>. If unresolved, escalate to the
+                <a data-cfg-href="links.rbiCms" href="https://cms.rbi.org.in" rel="noopener" target="_blank">RBI CMS</a> or
+                <a data-cfg-href="links.sachet" href="https://sachet.rbi.org.in" rel="noopener" target="_blank">Sachet</a> portals.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <form id="grievance-form" novalidate>
+              <div id="form-note" class="form-note" aria-live="polite"></div>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="fullName">Full name <span class="req">*</span></label>
+                  <input type="text" id="fullName" name="fullName" autocomplete="name" required />
+                  <span class="field-error" data-error-for="fullName"></span>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email <span class="req">*</span></label>
+                  <input type="email" id="email" name="email" autocomplete="email" required />
+                  <span class="field-error" data-error-for="email"></span>
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone <span class="req">*</span></label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+                  <span class="field-error" data-error-for="phone"></span>
+                </div>
+                <div class="form-field">
+                  <label for="loanId">Loan / Application ID <span class="text-muted">(optional)</span></label>
+                  <input type="text" id="loanId" name="loanId" />
+                  <span class="field-error" data-error-for="loanId"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <label for="category">Category <span class="req">*</span></label>
+                  <select id="category" name="category" required>
+                    <option value="">Select a category…</option>
+                    <option value="Disbursement">Disbursement</option>
+                    <option value="Repayment">Repayment</option>
+                    <option value="Recovery practices">Recovery practices</option>
+                    <option value="Data privacy">Data privacy</option>
+                    <option value="Interest & charges">Interest &amp; charges</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <span class="field-error" data-error-for="category"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <label for="subject">Subject <span class="req">*</span></label>
+                  <input type="text" id="subject" name="subject" required />
+                  <span class="field-error" data-error-for="subject"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <label for="message">Message <span class="req">*</span></label>
+                  <textarea id="message" name="message" required></textarea>
+                  <span class="field-error" data-error-for="message"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <div class="form-consent">
+                    <input type="checkbox" id="consent" name="consent" required />
+                    <label for="consent">I consent to Shuhari Finance Pvt. Ltd. processing the information
+                      in this complaint for the purpose of grievance redressal. <span class="req">*</span></label>
+                  </div>
+                  <span class="field-error" data-error-for="consent"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <button type="submit" class="btn btn--primary btn--lg btn--block">Submit complaint</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div id="site-footer"></div>
+  <script src="/scripts/config.js"></script>
+  <script src="/scripts/include.js"></script>
+  <script src="/scripts/grievance-form.js"></script>
+</body>
+</html>

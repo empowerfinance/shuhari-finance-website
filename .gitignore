@@ -1,0 +1,9 @@
+.DS_Store
+.claude/
+.netlify/
+node_modules/
+
+# Internal working files — must not be published from a public repo.
+CLAUDE.md
+TODO.md
+notion-cache/

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+  products.html — Products & Services. Covers RBI disclosure #5 (product details + APR).
+  OUTSTANDING PLACEHOLDERS:
+    • Personal Loan details: amounts, eligibility, tenor specifics ... [25]
+    • Interest rate range + APR (all-inclusive) ..................... [26]
+    • Fees & charges figures ........................................ [27]
+    • product-personal-loan.png added
+  NOTE: Personal Loan is the only product for now. Cards are structured so a
+  second product can be added later without restructuring.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Personal Loan | Shuhari Finance Pvt. Ltd.</title>
+  <meta name="description" content="Shuhari Finance Personal Loan — features, eligibility, loan amounts, tenor and the all-inclusive Annual Percentage Rate (APR)." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/tokens.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/index.html">Home</a></li><li>Products</li></ol></nav>
+        <div class="page-hero__inner">
+          <span class="eyebrow">Products &amp; Services</span>
+          <h1>Personal Loan</h1>
+          <p class="lead">Simple, transparent personal credit with an all-inclusive APR disclosed
+            upfront — no hidden charges.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product overview -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="align-items:center;gap:var(--space-7)">
+          <img src="/assets/product-personal-loan.png"
+               alt="An everyday Indian individual achieving a personal goal made possible by accessible credit"
+               width="1024" height="1024"
+               style="width:100%;height:auto;max-width:420px;border-radius:var(--radius);display:block;">
+          <div class="flow">
+            <span class="rbi-badge">Personal Loan</span>
+            <h2>A flexible short-term personal loan</h2>
+            <p class="text-muted">A short-tenor personal loan with a fully digital application via the
+              NIRA platform. All terms, interest rates and fees are disclosed upfront.</p>
+            <ul>
+              <li><strong>Loan amount:</strong> <span class="placeholder">[TO BE UPDATED: min&ndash;max]</span><span class="placeholder-ref">25</span></li>
+              <li><strong>Tenor:</strong> up to 12 months <span class="placeholder">[confirm]</span><span class="placeholder-ref">25</span></li>
+              <li><strong>Repayment:</strong> equated monthly instalments (EMI) <span class="placeholder">[confirm]</span><span class="placeholder-ref">25</span></li>
+              <li><strong>Disbursal:</strong> within 24 hours of approval (operational commitment)</li>
+            </ul>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="/documents/interest-rate-policy.pdf" target="_blank" rel="noopener">Rates &amp; charges</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / eligibility -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="grid grid--2" style="gap:var(--space-6)">
+          <div>
+            <h2>Key features</h2>
+            <ul class="flow" style="margin-top:var(--space-3)">
+              <li>100% digital application via the NIRA platform</li>
+              <li>Transparent, all-inclusive pricing — see APR below</li>
+              <li>No hidden charges; every fee disclosed in the Key Fact Statement</li>
+              <li>Short tenors, up to 12 months</li>
+              <li>Fair, non-coercive recovery per our Fair Practices Code</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Eligibility <span class="placeholder-ref">25</span></h2>
+            <ul class="flow" style="margin-top:var(--space-3)">
+              <li>Resident Indian <span class="placeholder">[confirm age band]</span></li>
+              <li>Minimum monthly income <span class="placeholder">[TO BE UPDATED]</span></li>
+              <li>Valid KYC documents (as per RBI / CKYC norms)</li>
+              <li>Active bank account for disbursal and repayment</li>
+              <li><span class="placeholder">[Other eligibility criteria — TO BE UPDATED]</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APR + charges -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Annual Percentage Rate (APR) &amp; charges</h2>
+          <p class="lead">The all-inclusive APR and all applicable fees and charges are set out below. <span class="placeholder-ref">26</span></p>
+        </div>
+
+        <div class="table-wrap" style="margin-bottom:var(--space-4)">
+          <table class="data">
+            <caption>Personal Loan — indicative pricing (subject to confirmation)</caption>
+            <thead>
+              <tr><th scope="col">Parameter</th><th scope="col">Value</th><th scope="col">Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Interest rate (per month)</td><td><span class="placeholder">[TO BE UPDATED]</span><span class="placeholder-ref">26</span></td><td>Reducing balance; varies by risk grade</td></tr>
+              <tr><td>Interest rate range (per annum)</td><td><span class="placeholder">[min&ndash;max % p.a.]</span><span class="placeholder-ref">26</span></td><td>See Interest Rate Policy</td></tr>
+              <tr><td><strong>APR (all-inclusive)</strong></td><td><strong><span class="placeholder">[TO BE UPDATED]</span></strong><span class="placeholder-ref">26</span></td><td>Disclosed per loan in the Key Fact Statement</td></tr>
+              <tr><td>Processing fee</td><td><span class="placeholder">[TO BE UPDATED]</span><span class="placeholder-ref">27</span></td><td>One-time, deducted upfront</td></tr>
+              <tr><td>Prepayment / foreclosure charge</td><td><span class="placeholder">[TO BE UPDATED]</span><span class="placeholder-ref">27</span></td><td>If applicable</td></tr>
+              <tr><td>Late payment / penal charges</td><td><span class="placeholder">[TO BE UPDATED]</span><span class="placeholder-ref">27</span></td><td>Penal charges, not penal interest (per RBI)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-muted" style="font-size:var(--fs-small)">For the full rate rationale and the
+          complete schedule of charges, see the <a href="/documents/interest-rate-policy.pdf" target="_blank" rel="noopener">Interest Rate Policy</a>.
+          A representative APR example will be published here once pricing is finalised.</p>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container divider-cta">
+        <h2 style="max-width:24ch">Questions about a loan or a charge?</h2>
+        <p style="color:#B9CAD8;max-width:52ch">Our pricing is transparent and our grievance process is open.
+          Reach out any time.</p>
+        <div class="hero__actions" style="justify-content:center">
+          <a class="btn btn--on-dark btn--lg" href="/contact.html">Contact us</a>
+          <a class="btn btn--on-dark btn--secondary btn--lg" href="/grievance-redressal.html">File a complaint</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div id="site-footer"></div>
+  <script src="/scripts/config.js"></script>
+  <script src="/scripts/include.js"></script>
+</body>
+</html>

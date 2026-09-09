@@ -1,0 +1,13 @@
+[build]
+  publish = "site"
+
+# Plain static site — HTML5 + CSS + vanilla JS, no build step.
+# `site/` is served as the web root, so the root-relative paths in the
+# pages (/styles/…, /partials/…, /documents/…) resolve unchanged.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"

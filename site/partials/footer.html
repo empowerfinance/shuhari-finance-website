@@ -1,0 +1,91 @@
+<!-- Site footer. Injected into #site-footer by scripts/include.js.
+     Corporate-identity block (RBI disclosure #1) + regulatory statement are
+     populated from scripts/config.js so they appear on EVERY page, edited once. -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand + about -->
+      <div class="footer__col">
+        <img class="footer__brand-mark" src="/assets/logo.svg"
+             alt="Shuhari Finance" width="558" height="224" />
+        <p class="footer__about">
+          An RBI-regulated Non-Banking Financial Company and the lending arm of the
+          <a href="https://www.nirafinance.com" rel="noopener" target="_blank">NIRA</a>
+          digital lending platform.
+        </p>
+        <div class="footer__regulator">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span data-cfg="rbiStatement">Regulated by the Reserve Bank of India.</span>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <nav class="footer__col" aria-label="Quick links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/partners.html">Partners &amp; Disclosures</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Policies -->
+      <nav class="footer__col" aria-label="Policies and disclosures">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="/policies.html">Policies &amp; Disclosures</a></li>
+          <li><a href="/documents/fair-practices-code.pdf" target="_blank" rel="noopener">Fair Practices Code</a></li>
+          <li><a href="/documents/interest-rate-policy.pdf" target="_blank" rel="noopener">Interest Rate Policy</a></li>
+          <li><a href="/documents/privacy-policy.pdf" target="_blank" rel="noopener">Privacy Policy</a></li>
+          <li><a href="/grievance-redressal.html">Grievance Redressal</a></li>
+        </ul>
+      </nav>
+
+      <!-- Corporate identity (RBI #1) -->
+      <div class="footer__col">
+        <h4>Corporate Identity</h4>
+        <dl class="footer__identity">
+          <dt>Legal name</dt>
+          <dd data-cfg="legalName">Shuhari Finance Pvt. Ltd.</dd>
+          <dt>CIN</dt>
+          <dd data-cfg="cin">—</dd>
+          <dt>RBI CoR No.</dt>
+          <dd data-cfg="corNumber">—</dd>
+          <dt>Registered office</dt>
+          <dd data-cfg="registeredOffice">—</dd>
+        </dl>
+        <ul style="list-style:none;padding:0;margin-top:var(--space-3)">
+          <li><a data-cfg-href="links.rbiNbfcList" href="https://nbfc.rbi.org.in"
+                 rel="noopener" target="_blank">Verify our registration on RBI &rarr;</a></li>
+          <li><a data-cfg-href="links.sachet" href="https://sachet.rbi.org.in"
+                 rel="noopener" target="_blank">RBI Sachet portal &rarr;</a></li>
+          <li><a data-cfg-href="links.rbiCms" href="https://cms.rbi.org.in"
+                 rel="noopener" target="_blank">RBI CMS / Ombudsman &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> <span data-cfg="legalName">Shuhari Finance Pvt. Ltd.</span> All rights reserved.</p>
+      <nav class="footer-bottom__links" aria-label="Legal">
+        <a href="/documents/terms-and-conditions.pdf" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+        <a href="/policies.html">Policies &amp; Disclosures</a>
+      </nav>
+    </div>
+
+    <p class="footer__disclaimer">
+      Disclaimer: The content on this website is subject to updates issued by the
+      Reserve Bank of India from time to time and to final legal &amp; compliance
+      review before go-live. In case of any conflict between the content here and
+      the applicable RBI Master Directions / RBI (Digital Lending) Directions, 2025,
+      the RBI circulars shall prevail.
+    </p>
+  </div>
+</footer>

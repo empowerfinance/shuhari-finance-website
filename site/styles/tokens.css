@@ -1,0 +1,88 @@
+/* =============================================================================
+   tokens.css — Design tokens (CSS custom properties)
+   Shuhari Finance Pvt. Ltd. compliance website. See CLAUDE.md §7.
+   Palette anchored on the logo: teal #009DA5 + navy #00355B.
+   ========================================================================== */
+:root {
+  /* ---- Colour: brand ----------------------------------------------------- */
+  --color-teal:        #009DA5;   /* primary brand / CTAs / accents (fills only) */
+  --color-teal-dark:   #007A81;   /* hover/active + teal text on light (AA-safe) */
+  --color-teal-tint:   #E6F5F6;   /* light section backgrounds */
+  --color-navy:        #00355B;   /* headings, header/footer, primary text */
+  --color-navy-dark:   #00243E;   /* deep footer bg */
+  --color-navy-tint:   #E7EEF4;
+
+  /* ---- Colour: neutrals & UI -------------------------------------------- */
+  --color-ink:         #0F2233;   /* body text */
+  --color-muted:       #5B6B79;   /* secondary text */
+  --color-border:      #DDE4EA;
+  --color-bg:          #FFFFFF;
+  --color-bg-alt:      #F6F9FB;   /* alternating sections */
+
+  --color-success:     #1E9E6A;
+  --color-success-tint:#E7F5EE;
+  --color-error:       #D2452F;
+  --color-error-tint:  #FBEAE7;
+  --color-warning:     #C77700;
+  --color-warning-tint:#FBF1E0;
+
+  /* ---- Typography -------------------------------------------------------- */
+  --font-head: "Sora", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* Fluid type scale (clamp: min, preferred, max) */
+  --fs-h1:    clamp(2.25rem, 1.6rem + 2.6vw, 3.25rem);
+  --fs-h2:    clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem);
+  --fs-h3:    clamp(1.25rem, 1.05rem + 0.7vw, 1.5rem);
+  --fs-h4:    clamp(1.1rem, 1rem + 0.4vw, 1.25rem);
+  --fs-body:  1rem;
+  --fs-lead:  clamp(1.05rem, 1rem + 0.5vw, 1.25rem);
+  --fs-small: 0.875rem;
+  --fs-xs:    0.78rem;
+
+  --lh-tight:  1.2;
+  --lh-snug:   1.4;
+  --lh-body:   1.65;
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-bold:    700;
+
+  /* ---- Spacing (8px scale) ---------------------------------------------- */
+  --space-1: 0.5rem;   /*  8px */
+  --space-2: 0.75rem;  /* 12px */
+  --space-3: 1rem;     /* 16px */
+  --space-4: 1.5rem;   /* 24px */
+  --space-5: 2rem;     /* 32px */
+  --space-6: 2.5rem;   /* 40px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-9: 5rem;     /* 80px */
+  --space-10:6rem;     /* 96px */
+
+  /* ---- Layout ------------------------------------------------------------ */
+  --container:     1200px;
+  --container-narrow: 820px;   /* long-form policy text */
+  --gutter:        clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --header-h:      72px;
+
+  /* ---- Radius & shadow --------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius:    12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 53, 91, 0.08);
+  --shadow:    0 4px 20px rgba(0, 53, 91, 0.08);
+  --shadow-md: 0 10px 30px rgba(0, 53, 91, 0.10);
+  --shadow-lg: 0 20px 50px rgba(0, 53, 91, 0.14);
+
+  /* ---- Motion ------------------------------------------------------------ */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur:  0.2s;
+
+  /* ---- Z-index ----------------------------------------------------------- */
+  --z-header: 100;
+  --z-overlay: 200;
+}
