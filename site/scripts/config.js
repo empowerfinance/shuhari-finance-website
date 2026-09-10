@@ -93,7 +93,6 @@ window.SHUHARI = {
   // `Investor Relations` hook intentionally disabled — enable when NCDs/debt issued.
   nav: [
     { label: "About Us",             href: "/about.html" },
-    { label: "Products",             href: "/products.html" },
     { label: "Partners",             href: "/partners.html" }
     // { label: "Investor Relations", href: "/investor-relations.html", disabled: true }
   ]
