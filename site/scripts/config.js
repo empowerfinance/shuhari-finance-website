@@ -94,10 +94,7 @@ window.SHUHARI = {
   nav: [
     { label: "About Us",             href: "/about.html" },
     { label: "Products",             href: "/products.html" },
-    { label: "Partners",             href: "/partners.html" },
-    { label: "Policies & Disclosures", href: "/policies.html" },
-    { label: "Grievance Redressal",  href: "/grievance-redressal.html" },
-    { label: "Contact",              href: "/contact.html" }
+    { label: "Partners",             href: "/partners.html" }
     // { label: "Investor Relations", href: "/investor-relations.html", disabled: true }
   ]
 };
