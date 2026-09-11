@@ -18,7 +18,7 @@ window.SHUHARI = {
   corNumber: "[TO BE UPDATED]",                  // [17] pending CoR issuance
   corNumberRef: "17",
   registeredOffice:
-    "36/5, H206, 3rd Floor, Somasundarapalya Main Road, adjacent 27th Main Road, Haralukunte Village, Sector 2, HSR Layout, Bengaluru, Karnataka - 560102", // confirmed
+    "WeWork Prestige Cube, Site No. 26, Laskar Hosur Road, Adugodi, Koramangala, Bengaluru, Karnataka 560030", // confirmed
 
   rbiStatement: "Shuhari Finance Pvt. Ltd. is regulated by the Reserve Bank of India.",
 
@@ -31,15 +31,11 @@ window.SHUHARI = {
   nira: { name: "NIRA", url: "https://www.nirafinance.com" },
 
   // ---- Customer care --------------------------------------------------------
-  // [24] STILL PENDING. The Grievance Redressal Policy lists "NIRA Help & Support"
-  // (support@nirafinance.com / 7259947885) — but that is the LSP's support desk, not
-  // Shuhari Finance's own customer-care line, which is what contact.html renders here.
-  // See TODO.md §C before filling. Note also the e-mail domain conflict flagged there:
-  // the Terms of Use uses shuhari.finance, this policy uses shuharifinance.com.
+  // [24] RESOLVED — Shuhari Finance's own customer-care line (not the LSP's
+  // NIRA Help & Support desk).
   customerCare: {
-    phone: "[TO BE UPDATED]",                     // [24]
-    email: "[TO BE UPDATED]",                      // [24]
-    ref: "24"
+    phone: "+91 9364785983",
+    email: "contactus@shuhari.finance"
   },
 
   // ---- Grievance redressal (RBI disclosure #4) ------------------------------

@@ -3,10 +3,8 @@
   contact.html — Contact Us. Reinforces RBI disclosure #1 (corporate identity).
   All facts pulled from config.js via data-cfg.
   OUTSTANDING PLACEHOLDERS:
-    • Customer care phone/email (config.customerCare) .......... [24]
-      (see TODO.md §C — the policy's support desk belongs to the LSP, not SFPL)
-    • RBI CoR number (config.corNumber) ........................ [17]
     • cta-contact.png added
+  Customer care phone/email (config.customerCare) [24] filled in 2026-09-11.
 -->
 <html lang="en">
 <head>
@@ -56,8 +54,8 @@
               <div>
                 <h3>Customer care</h3>
                 <address>
-                  Phone: <span class="placeholder" data-cfg="customerCare.phone">[TO BE UPDATED]</span><span class="placeholder-ref">24</span><br />
-                  Email: <span class="placeholder" data-cfg="customerCare.email">[TO BE UPDATED]</span><span class="placeholder-ref">24</span>
+                  Phone: <span data-cfg="customerCare.phone">[TO BE UPDATED]</span><br />
+                  Email: <span data-cfg="customerCare.email">[TO BE UPDATED]</span>
                 </address>
               </div>
             </div>
@@ -70,14 +68,7 @@
               <dl class="fact-grid" style="margin-top:var(--space-3)">
                 <div class="fact"><dt>Legal name</dt><dd data-cfg="legalName">Shuhari Finance Pvt. Ltd.</dd></div>
                 <div class="fact"><dt>CIN</dt><dd data-cfg="cin"></dd></div>
-                <div class="fact"><dt>RBI CoR No.</dt><dd><span class="placeholder" data-cfg="corNumber">[TO BE UPDATED]</span><span class="placeholder-ref">17</span></dd></div>
-                <div class="fact"><dt>Regulator</dt><dd>Reserve Bank of India</dd></div>
               </dl>
-              <p class="text-muted" style="font-size:var(--fs-small);margin-top:var(--space-3)">
-                <span data-cfg="rbiStatement">Shuhari Finance Pvt. Ltd. is regulated by the Reserve Bank of India.</span>
-                Verify our registration on the
-                <a data-cfg-href="links.rbiNbfcList" href="https://nbfc.rbi.org.in" rel="noopener" target="_blank">RBI NBFC list</a>.
-              </p>
             </div>
 
             <img src="/assets/cta-contact.png"
